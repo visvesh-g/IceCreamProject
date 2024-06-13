@@ -1,6 +1,6 @@
 
 # Seasonal Flavors IceCream Parlor
-# This project is a web application for managing an ice cream parlor's flavors and user allergies. The app allows users to search for ice cream flavors, add allergens, and highlight flavors that contain ingredients to which they are allergic.
+# Seasonal Flavors ice-cream parlor is a simple application for managing an ice cream parlor's flavors and user allergies. The app allows users to search for ice cream flavors, add allergens, and highlight flavors that contain ingredients to which they are allergic.
 
 Project Structure:
 * Main Application
