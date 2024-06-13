@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Flavors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1 id="seaFlav">Seasonal Flavors IceCream Parlor</h1>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('cart') }}">Cart</a></li>
+                <li><a href="{{ url_for('allergens') }}">Allergens</a></li>
+                <li><a href="{{ url_for('suggestions') }}">Suggestions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <label for="addSugg" id="suggLabel">Add suggestions</label>
+        <input type="text" name="addSugg" id="addSugg">
+        <button id="addsuggButton" type="submit">Submit</button>
+        <!-- Suggestion list -->
+        <ul id="suggestionList">
+            <!-- Suggestions will be dynamically added here -->
+        </ul>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/suggestions.js') }}"></script>
+</body>
+</html>

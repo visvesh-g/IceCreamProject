@@ -1,0 +1,171 @@
+html {
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #bcadad;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#flavorSearch {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#flavorList {
+    list-style-type: none;
+    padding: 0;
+    width: 25%; /* Extend the flavor list to the full width */
+}
+
+#flavorList li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align flavor and button */
+    align-items: center; /* Vertically center the content */
+}
+
+/* Input box to add */
+#add {
+    width: 30%; /* Adjust as needed */
+    padding: 7px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Button */
+#addButton {
+    padding: 7px;
+    font-size: 16px;
+    background-color: rgb(122, 18, 160);
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+
+#addButton:hover {
+    background-color: rgb(143, 91, 162);
+}
+
+#flavorList .addToCartButton {
+    padding: 5px;
+    background-color: rgb(122, 18, 160);
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+
+#cartList li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left:200px;
+    margin-right:200px;
+    border-radius: 5px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align flavor and button */
+    align-items: center;
+     /* Vertically center the content */
+}
+.flavorList {
+    display: flex; /* Ensures the flavor name and button are displayed in a row */
+    align-items: right; /* Aligns items vertically within the container */
+}
+
+.flavorName {
+    flex-grow: 0; /* Allows the flavor name to grow to fill available space */
+}
+
+.allergen-label {
+    color: red;
+}
+
+.suggested-label {
+    color: green;
+}
+
+/*Suggestions.html*/
+#suggLabel{
+    color: #f2f2f2;
+}
+
+/*Suggestions input box*/
+#addSugg{
+    width: 10%;
+    padding: 7px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    
+}
+
+/*Suggestions submit button*/
+#addsuggButton{
+    width: 10%;
+    padding: 7px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: rgb(122, 18, 160);
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+
+#addsuggButton:hover{
+    background-color: rgb(143, 91, 162);
+}
+
+/*To add white color*/
+.textColor{
+    color: #f2f2f2;
+    
+}
+
+/*To remove bullet point*/
+.textDecor{
+    list-style-type: none;
+}
+
+/*Cart.html*/
+h1{
+    text-align: center;
+    color: #f2f2f2;
+}
+
+/*Padding class*/
+.pad{
+    padding-bottom: 20px;
+}
+
+/*Allergen.html*/
+#allergenPage{
+    color: #f2f2f2;
+}

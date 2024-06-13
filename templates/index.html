@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Flavors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1 id="seaFlav">Seasonal Flavors IceCream Parlor</h1>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('cart') }}">Cart</a></li>
+                <li><a href="{{ url_for('allergens') }}">Allergens</a></li>
+                <li><a href="{{ url_for('suggestions') }}">Suggestions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Flavor search/filter -->
+        <input type="text" id="flavorSearch" placeholder="Search flavors..."><br>
+        <label for="add" id="allergenLabel">Add Allergen</label>
+        <input type="text" id="add"> <button value="Add Items" id="addButton">Add Item</button>
+        <!-- Flavor list -->
+       
+        <ul id="flavorList">
+            {% for flavor in flavors %}
+            <li>
+                <div class="flavor-container">
+                    <span class="flavor-name">{{ flavor.name }}</span>
+                    {% if flavor.status == 'allergic' %}
+                    <span class="allergen-label" style="color:red;">(Allergic: {{ flavor.allergens | join(', ') }})</span>
+                    {% else %}
+                    <span class="suggested-label" style="color:green;">(Suggested)</span>
+                    {% endif %}
+                    <button class="addToCartButton">Add to Cart</button>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
