@@ -50,15 +50,15 @@ Database Initialization:
   	
 Running the Application:
 1.	Install Dependencies:
-    o	Install Flask and other dependencies using pip.
-bash
-Copy code
-pip install flask
+    * Install Flask and other dependencies using pip.
+* bash
+* Copy code
+* pip install flask
 2.	Run the Flask App:
-o	Start the application by running app.py.
-bash
-Copy code
-python app.py
+    * Start the application by running app.py.
+* bash
+* Copy code
+* python app.py
 3.	Open the Application:
 o	Open a web browser and navigate to http://127.0.0.1:5000/ to use the application.
 Contributing
