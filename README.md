@@ -20,6 +20,9 @@ Templates:
 Static Files:
 * static/style.css: The main stylesheet for the application.
 * static/js/script.js: JavaScript file that handles client-side interactions.
+* static/js/cart.js.js: JavaScript file that handles added cart items by users.
+* static/js/suggestions.js: JavaScript file that handles user suggestions.
+
 
 Features:
 1.	Flavor Search/Filter: Allows users to search for flavors by name.
